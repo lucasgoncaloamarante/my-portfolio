@@ -4,13 +4,16 @@ import { ReactNode } from "react"
 
 interface StyledButtonProps {
     children: ReactNode
+    onClick: ()=> void
 }
 
-const StyledButton: React.FC<StyledButtonProps> = ({children}) => {
+const StyledButton: React.FC<StyledButtonProps> = ({children, onClick}) => {
 
 
 
     const StyledButton = styled("button")(({theme})=> ({
+        position: "relative",
+        zIndex: 1,
         backgroundColor: "transparent",
         border: `1px solid ${theme.palette.primary.contrastText}`,
         borderRadius: "3px",
@@ -21,15 +24,22 @@ const StyledButton: React.FC<StyledButtonProps> = ({children}) => {
         alignItems: "center",
         justifyContent: "center",
         gap: "10px",
+        cursor: "pointer",
         '&:hover': {
             backgroundColor: theme.palette.secondary.light
-        }
+        },
+        [theme.breakpoints.down('sm')]: { // Para telas pequenas, se necessário
+          cursor: "pointer",
+          '&:hover': {
+            backgroundColor: theme.palette.secondary.light,
+          },
+        }, 
 
     }))
 
     return (
       <>
-        <StyledButton>
+        <StyledButton onClick={onClick}>
             {children}
         </StyledButton>
       </>
