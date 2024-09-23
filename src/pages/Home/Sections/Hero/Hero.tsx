@@ -50,7 +50,7 @@ const Hero = () => {
                 </Grid>
                 <Grid item xs={12} md={7}>
                     <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Lucas Amarante</Typography>
-                    <Typography color="primary.contrastText" variant="h2" textAlign="center">Me contrata, Rosi</Typography>
+                    <Typography color="primary.contrastText" variant="h2" textAlign="center">Futuro Analista Pleno</Typography>
 
                     <Grid container display="flex" justifyContent="center" spacing={3} pt={3}>
                         <Grid item xs={12} md={4} display="flex" justifyContent="center">
@@ -73,8 +73,27 @@ const Hero = () => {
                             </StyledButton>
                         </Grid>
                     </Grid>
+                    <Grid display="flex" gap={3} justifyContent="center" alignItems="center" paddingTop="80px">
+                        <Box position="relative">
+                            <a href="https://www.linkedin.com/in/amarante-lucas/" target="_blank" rel="noopener noreferrer">
+                            <img 
+                            src="\src\assets\images\linkedin.png" 
+                            alt="Linkedin"
+                            width="40"
+                            height="40" />
+                            </a>
+                        </Box>
 
-
+                        <Box position="relative">
+                        <a href="https://github.com/lucasgoncaloamarante" target="_blank" rel="noopener noreferrer">
+                            <img 
+                            src="\src\assets\images\github.png" 
+                            alt="Linkedin"
+                            width="40"
+                            height="40" />
+                        </a>
+                        </Box>
+                    </Grid>
                 </Grid>
                 </Grid>
             </Container>
