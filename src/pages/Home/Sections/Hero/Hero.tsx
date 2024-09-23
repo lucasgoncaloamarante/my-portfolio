@@ -1,5 +1,7 @@
 import { Box, Container, Grid, styled, Typography } from "@mui/material"
-import Avatar from "../../../../assets/images/avatar 4.jpg"
+import Avatar from "../../../../assets/images/avatar 4.jpg";
+import Linkedin from "../../../../assets/images/linkedin.png";
+import github from "../../../../assets/images/github.png";
 import DownloadIcon from '@mui/icons-material/Download';
 import MailIcon from '@mui/icons-material/Mail';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
@@ -28,6 +30,14 @@ const Hero = () => {
         borderRadius: "50%",
         border: `1px solid ${theme.palette.primary.contrastText}`
     }))
+
+    const AppImg = styled("img")(() => ({
+        display: "flex",
+        gap: "3px", // ou o valor que você deseja
+        justifyContent: "center",
+        alignItems: "center",
+    }));
+    
 
     return (
       <>
@@ -76,21 +86,13 @@ const Hero = () => {
                     <Grid display="flex" gap={3} justifyContent="center" alignItems="center" paddingTop="80px">
                         <Box position="relative">
                             <a href="https://www.linkedin.com/in/amarante-lucas/" target="_blank" rel="noopener noreferrer">
-                            <img 
-                            src="\src\assets\images\linkedin.png" 
-                            alt="Linkedin"
-                            width="40"
-                            height="40" />
+                            <AppImg src={Linkedin} height="50px" width="50px"/>
                             </a>
                         </Box>
 
                         <Box position="relative">
                         <a href="https://github.com/lucasgoncaloamarante" target="_blank" rel="noopener noreferrer">
-                            <img 
-                            src="\src\assets\images\github.png" 
-                            alt="Linkedin"
-                            width="40"
-                            height="40" />
+                        <AppImg src={github}  height="50px" width="50px"/>
                         </a>
                         </Box>
                     </Grid>
