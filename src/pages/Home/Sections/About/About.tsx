@@ -7,7 +7,6 @@ const About = () => {
 
     const StyledAbout = styled("div")(({})=> ({
         backgroundColor: "#E6EAE1",
-        height: "100vh"
 
     }))
 
