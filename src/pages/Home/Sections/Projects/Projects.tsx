@@ -94,7 +94,7 @@ const Projects = () => {
                     <Typography color="primary.contrastText" variant="h4" marginBottom="10px" textAlign="left" sx={{ width: '100%', paddingLeft: '10px' }}>Cardápio digital</Typography>
                     <Typography color="primary.contrastText" variant="h6" marginBottom="10px" textAlign="left" sx={{ width: '100%', paddingLeft: '10px' }}>Agosto - 2024</Typography>
                     <StyledImg src={Cardapio}/>
-                    <Grid display="flex" gap="100px" paddingTop="30px">
+                    <Grid container justifyContent="center" paddingTop="30px" gap="100px">
                     <a href="https://cardapio-livid-nine.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <StyledButton>View Project</StyledButton>
                     </a>
@@ -104,11 +104,11 @@ const Projects = () => {
                     </Grid>
                 </StyledBox3>
 
-                <StyledBox3 item xs={12} sm={8} md={6} lg={7}>
+                <StyledBox3 item xs={12} sm={8} md={6} lg={7} >
                 <Typography color="primary.contrastText" variant="h4" marginBottom="10px" textAlign="left" sx={{ width: '100%', paddingLeft: '10px' }}>Gerador de senhas</Typography>
                 <Typography color="primary.contrastText" variant="h6" marginBottom="10px" textAlign="left" sx={{ width: '100%', paddingLeft: '10px' }}>Setembro - 2024</Typography>
                     <StyledImg src={Senha}/>
-                    <Grid display="flex" gap="100px" paddingTop="30px">
+                    <Grid container justifyContent="center" paddingTop="30px" gap="100px">
                     <a href="https://gerador-de-senhas-ruby-three.vercel.app/" target="_blank" rel="noopener noreferrer">
                         <StyledButton>View Project</StyledButton>
                     </a>

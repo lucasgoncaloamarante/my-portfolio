@@ -7,7 +7,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import theme from "../../../../theme";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
-import curriculo from "../../../../assets/images/Resume.pdf";
+import curriculo from "../../../../assets/images/Resume-LucasAmarante.pdf";
 
 const Hero = () => {
 
