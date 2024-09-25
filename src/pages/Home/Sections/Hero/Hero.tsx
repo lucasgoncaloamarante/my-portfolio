@@ -7,6 +7,7 @@ import MailIcon from '@mui/icons-material/Mail';
 import StyledButton from "../../../../components/StyledButton/StyledButton";
 import theme from "../../../../theme";
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackground";
+import curriculo from "../../../../assets/images/Resume.pdf";
 
 const Hero = () => {
 
@@ -37,6 +38,10 @@ const Hero = () => {
         justifyContent: "center",
         alignItems: "center",
     }));
+
+    const handleEmailClick = () => {
+        window.location.href = 'mailto:lucasgoncaloamarante@gmail.com';
+      };
     
 
     return (
@@ -67,15 +72,17 @@ const Hero = () => {
 
 
                             <StyledButton onClick={()=> console.log("dowload")}>
+                            <a href={curriculo} download="Lucas_Amarante_CV.pdf" style={{ textDecoration: 'none', color: 'inherit', display: 'flex', alignItems: 'center', gap: '8px' }}>
                                 <DownloadIcon/>
                                     <Typography>
                                         Download CV
                                     </Typography>
+                            </a>
                             </StyledButton>
                         </Grid>
 
                         <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                            <StyledButton onClick={()=> console.log("contact")}>
+                            <StyledButton onClick={handleEmailClick}>
                                 <MailIcon/>
                                 <Typography>
                                     Contact me
